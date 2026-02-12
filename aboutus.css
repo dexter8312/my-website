@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+}
+
+/* Header */
+header {
+    background: #002f6c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Main Background */
+.main {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url("1.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 130vh;
+}
+
+/* Navbar */
+.navbar {
+    width: 1200px;
+    height: 100px;
+    margin-top: 1px 10px;
+    background-color: transparent;
+}
+
+.icon {
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+/* Menu */
+.menu {
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+/* ✅ Navbar Links ONLY */
+.navbar ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin-left: 30px;
+    margin-top: 40px;
+    word-spacing: 50px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    word-spacing: 10px;
+    transition: 0.4s ease-in-out;
+}
+
+.navbar ul li a:hover {
+    color: #d7d30c;
+}
+
+/* About Box */
+.box {
+    width: 100%;
+    float: left;
+    margin-top: 55px;
+}
+
+/* Main Heading */
+.box h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+}
+
+.box h1:hover {
+    color: #d7d30c;
+}
+
+/* Paragraph */
+.box p {
+    width: 100%;
+    text-align: center;
+    margin-top: 18px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.box p:hover {
+    color: #d7d30c;
+}
+
+/* About Us Sub Heading */
+.box h2 {
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 40px;
+    color: #fff;
+}
+
+.box h2:hover {
+    color: #d7d30c;
+}
+
+/* ✅ FIXED: About Us List as Bullet Points */
+.box ul {
+    width: fit-content;
+    margin: 20px auto;
+    padding-left: 40px;
+    display: block;
+    text-align: left;
+}
+
+.box ul li {
+    list-style: disc;
+    font-size: 28px;
+    margin: 12px 0;
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.box ul li:hover {
+    color: #d7d30c;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #002f6c;
+    color: white;
+}
+
+/* Responsive Design */
+@media screen and (max-width:1200px) {
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        display: flex;
+        width: 90%;
+        height: 100px;
+        float: left;
+        text-align: left;
+    }
+
+    /* Navbar Responsive */
+    .navbar ul {
+        margin-left: 0px;
+        text-align: left;
+    }
+
+    .navbar ul li {
+        margin-left: 0px;
+        float: left;
+    }
+
+    .navbar ul li a {
+        font-size: 3.2vw;
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .box h1 {
+        font-size: 6vw;
+    }
+
+    .box p {
+        font-size: 3.5vw;
+        width: 100%;
+    }
+
+    /* Responsive h2 + List */
+    .box h2 {
+        font-size: 5vw;
+    }
+
+    .box ul li {
+        font-size: 3.5vw;
+    }
+}
